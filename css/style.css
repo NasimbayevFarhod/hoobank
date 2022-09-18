@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/poppins-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-500 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/poppins-v20-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/poppins-v20-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/poppins-v20-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/poppins-v20-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body
+{
+  font-family: 'Poppins';
+  font-weight: 700;
+}
+
+.navbar__text
+{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+
+@media only screen and (max-width:450px) {
+  
+
+  .btn-meny
+  {
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/icons8-menu.svg");
+    background-size: cover;
+  }
+
+  .btn-meny__close
+  {
+    background-image: url("../images/icons8-close.svg ");
+  }
+
+  .mobile_navbar
+  {
+    padding: 50px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    background:#ffffff09;
+    display: block;
+    width: 100%;
+  }
+  
+  .mobile_navbar ul{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mobile_navbar ul li:not(:last-child)
+  {
+    padding-bottom: 13px;
+  }
+
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:790px) {
+  .list__item:nth-child(2)::before,
+  .list__item:nth-child(2)::after
+  {
+    display: block;
+    content: "";
+    width: 13px;
+    border-top: 1.70386px solid rgba(255, 255, 255, 0.6);
+    transform: rotate(90deg);
+  }
+  
+  .list__item:nth-child(2)::before
+  {
+    margin-right: auto;
+  }
+  
+  .list__item:nth-child(2)::after
+  {
+    margin-left: auto;
+  }
+  
+}
+
+
+
+.list
+{
+
+}
+
+
+.list__span
+{
+  font-weight: 600;
+  font-size: 40.8925px;
+  line-height: 130%;
+}
+
+.list__text
+{
+  font-weight: 400;
+  font-size: 20.4463px;
+  line-height: 130%;
+  text-transform: uppercase;
+  background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #DEF9FA 0.89%, #BEF3F5 17.23%, #9DEDF0 42.04%, #7DE7EB 55.12%, #5CE1E6 71.54%, #33BBCF 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content__inner-first-title
+{
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+}
+
+.content__inner-text
+{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.01em;
+  color: #ffffffb3;
+}
+
+.content__inner-btn
+{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: capitalize;
+  background: linear-gradient(157.81deg, #DEF9FA -43.27%, #BEF3F5 -21.24%, #9DEDF0 12.19%, #7DE7EB 29.82%, #5CE1E6 51.94%, #33BBCF 90.29%);
+}
+
+
+
+
+
+
+
+
+
+.content__item-inner
+{
+  max-width: 366px;
+}
+
+.content__item-title
+{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+
+
+.content__item-text
+{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffffb3;
+}
+
+.content__item::before
+{
+  display: block;
+  content: "";
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+  background-image: url(../images/Group\ 481727-Rewards.svg);
+}
+
+.content__item:nth-child(2)
+{
+  background: linear-gradient(153.47deg, rgba(255, 255, 255, 0) -341.94%, #14101D 95.11%);
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.content__item:nth-child(2):before
+{
+  background-image: url(../images/Group\ 481744-secured.svg);
+}
+
+.content__item:nth-child(3):before
+{
+  background-image: url(../images/Group\ 481745-balance.svg);
+}
+
+
+
+.content__inner-second
+{
+  max-width: 470px;
+}
+
+
+
+.content__inner-img
+{
+  background-color: rgb(0 4 15 / var(--tw-bg-opacity));
+}
+
+
+.content__inner-thit
+{
+  max-width: 570px;
+}
+
+
+
+
+
+
+
+
+.info__item-hero
+{
+  background: linear-gradient(144.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+
+
+.info__item
+{
+  max-width: 370px;
+}
+
+.info__item::before
+{
+  display: block;
+  content: "";
+  width: 43px;
+  height: 28px;
+  margin-bottom: 40px;
+  background-image: url(../images/“-_-img.svg);
+}
+
+.info__text
+{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+}
+
+.info__name
+{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.info__work
+{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card
+{
+
+  background: linear-gradient(324.39deg, #FFFFFF -278.56%, #6D6D6D -78.47%, #11101D 91.61%);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+}
+
+
+
+
+
